@@ -6,13 +6,13 @@
 
 
 <body>
-<h1>Login : </h1> 
-#{userBean.login} 
-<h1>pwd  : </h1>
-#{userBean.pwd}
+<h1>Login : #{userBean.login}</h1> 
+
+<h1>pwd  : #{userBean.pwd}</h1>
+
 
 <h:form> Click to see
-<h:commandButton value="Go to page" action="#pageMngBean.goToPage"/>
+<h:commandButton value="Go to page" action="#{pageMngBean.goToPage}"/>
 </h:form>
 </body>
 </html>
