@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html">
+<head>
+<title>JSF List</title>
+</head>
+
+
+<body>
+
+<table>
+	<ui:repeat value="#{userBean.userBean}“ var="user">
+		<tr> 
+			<td>#{user.login}</td> 
+			<td>#{person.pwd}</td>
+		</tr>
+	</ui:repeat >
+</table>
+
+</body>
+</html>

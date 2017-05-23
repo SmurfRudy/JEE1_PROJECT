@@ -1,0 +1,10 @@
+package servlet;
+
+public class Snippet {
+	
+	for (Entry<String, String[]> elt : request.getParameterMap().entrySet()){
+		String iit ="<li>" +elt.getValue()[0] +"</li>";
+				
+	}
+}
+

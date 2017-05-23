@@ -1,0 +1,5 @@
+package com.ProjetJSF.model.bean;
+
+public class UserBean {
+
+}

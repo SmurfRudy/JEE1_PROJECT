@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://java.sun.com/jsf/html" xmlns:f="http://java.sun.com/jsf/core">
+
+	<head>
+		<title>Appel AJAX</title>
+	</head>
+	
+	
+	<body>
+		
+			<h:form>
+				<h:inputText id="lastName" value="#{userBean.login}" /> 
+				<f:ajax render="id1" event="keyup" execute="login">
+				<h:inputText id="password" value="#{userBean.pwd}" /> 
+				
+				<h:commandButton value="OK" action="myAction" />
+					<f:ajax render="id1" execute="@form" /> 
+				<h:commandButton />
+			</h:form>
+		<h:outputText id="id1" value="#{user.login}" />
+		
+	</body>
+</html>

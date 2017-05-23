@@ -1,0 +1,5 @@
+package com.ProjetJSF.controller.bean;
+
+public class PageMngBean {
+
+}
